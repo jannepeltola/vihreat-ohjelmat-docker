@@ -1,0 +1,20 @@
+version: "3.3"
+
+services:
+  ohjelmat:
+    image: "vihreat-ohjelmat-app"
+    container_name: "vihreat-ohjelmat"
+    ports:
+      - "5175:80"
+
+  atomic:
+    image: "vihreat-ohjelmat-atomic"
+    container_name: "atomic"
+    ports:
+      - "9883:9883"
+    volumes:
+      - "atomic-storage:/atomic-storage"
+    platform: "linux/arm64"
+  
+volumes:
+  atomic-storage:

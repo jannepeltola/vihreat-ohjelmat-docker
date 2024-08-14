@@ -1,0 +1,5 @@
+  packages:
+    - "../atomic-server/browser/lib"
+    - "../atomic-server/browser/react"
+    - "../atomic-server/browser/cli"
+    - "../vihreat-lib"
